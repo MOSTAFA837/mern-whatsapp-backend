@@ -43,8 +43,6 @@ export const register = async (req, res, next) => {
         token: access_token,
       },
     });
-
-    res.send(req.body);
   } catch (error) {
     next(error);
   }
